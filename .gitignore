@@ -1,0 +1,34 @@
+# ═══════════════════════════════════════════════════════════
+#  LAS CMS — .gitignore
+# ═══════════════════════════════════════════════════════════
+
+# ── RAW DATA (real PII) ──────────────────────────────────
+data/
+*.tsv
+*.csv
+
+# ── SENSITIVE OUTPUTS ─────────────────────────────────────
+outputs/pii_mapping/
+outputs/anonymized/
+outputs/cleaned/
+outputs/rag_ready/
+outputs/chroma_db/
+outputs/findings.json
+outputs/cleaning_log.csv
+outputs/pii_inventory.csv
+
+# ── DOCS (internal) ──────────────────────────────────────
+copy_data_from_server.docx
+notebooks/CMS_Data_cleaning.pptx
+notebooks/Data_Explanation.pptx
+
+# ── PYTHON / JUPYTER ─────────────────────────────────────
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.conda/
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,28 @@
+name: las_cms
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # ── Data Analysis ──
+  - pandas=2.2.*
+  - numpy=1.26.*
+  - openpyxl              # For reading/writing Excel files
+  # ── Visualization ──
+  - matplotlib=3.8.*
+  - seaborn=0.13.*
+  - plotly=5.18.*
+  # ── Jupyter ──
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  # ── Utilities ──
+  - tqdm                  # Progress bars
+  - python-dateutil       # Date parsing
+  - pip:
+    # ── PII Detection ──
+    - presidio-analyzer    # Microsoft PII detection
+    - presidio-anonymizer  # PII anonymization
+    # ── NLP basics ──
+    - wordcloud            # For text analysis visuals
